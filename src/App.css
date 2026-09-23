@@ -1376,27 +1376,15 @@
 }
 
 
-/* refresh */
-
 .refresh {
   margin-left: auto;
-
   border: none;
-
   border-radius: 35px;
-
   padding: 8px 16px;
-
   background: #292929;
-
   color: #eeeeee;
-
   font-size: 12px;
 }
-
-/* =========================================
-   DEPOSIT SECTION
-========================================= */
 
 .deposit-section {
   position: relative;
@@ -1409,48 +1397,27 @@
   overflow: hidden;
 }
 
-
-/* =========================================
-   DEPOSIT VISUAL
-========================================= */
-
 .deposit-visual {
   position: relative;
-
   padding-left: 130px;
-
   padding-top: 95px;
 }
 
-
-/* =========================================
-   NETWORK SELECT
-========================================= */
-
 .network-select {
   width: 400px;
-
   height: 65px;
-
   border-radius: 18px;
-
   background: #292929;
-
   display: flex;
-
   align-items: center;
-
   padding: 0 20px;
-
   box-sizing: border-box;
 }
 
 
 .network-icons {
   display: flex;
-
   align-items: center;
-
   margin-right: 13px;
 }
 
@@ -1458,11 +1425,8 @@
 .network-icons span {
   width: 30px;
   height: 30px;
-
   border-radius: 50%;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
@@ -1470,91 +1434,62 @@
 
 .polygon-icon {
   background: #7844df;
-
   color: white;
-
   font-size: 20px;
 }
 
 
 .usdc-icon {
   margin-left: -7px;
-
   background: #4385dd;
-
   color: white;
-
   font-size: 20px;
 }
 
 
 .network-text {
   display: flex;
-
   flex-direction: column;
-
   gap: 3px;
 }
 
 
 .network-text small {
   color: #888888;
-
   font-size: 12px;
 }
 
 
 .network-text strong {
   color: #eeeeee;
-
   font-size: 15px;
-
   font-weight: 400;
 }
 
 
 .network-arrow {
   margin-left: auto;
-
   width: 30px;
   height: 30px;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   background: #333333;
-
   color: #eeeeee;
-
   font-size: 20px;
   padding-bottom: 10px;
 }
 
-
-/* =========================================
-   QR CODE
-========================================= */
-
 .qr-container {
   width: 400px;
-
   height: 320px;
-
   margin-top: 18px;
-
   border-radius: 20px;
-
   background: #292929;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   overflow: hidden;
 }
 
@@ -1570,8 +1505,6 @@
   overflow: hidden;
 }
 
-
-/* QR dots */
 
 .qr-dots {
   position: absolute;
@@ -1590,9 +1523,6 @@
 
   background: #f4f4f4;
 }
-
-
-/* finder squares */
 
 .finder {
   position: absolute;
@@ -1642,57 +1572,32 @@
   left: 0;
 }
 
-
-/* logo */
-
 .qr-center {
   position: absolute;
-
   z-index: 5;
-
   left: 50%;
   top: 50%;
-
   transform: translate(-50%, -50%);
-
   width: 72px;
   height: 72px;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   background: #78efaa;
-
   color: #075238;
-
   font-size: 52px;
 }
 
-/* =========================================
-   WALLET
-========================================= */
-
 .wallet-row {
   width: 400px;
-
   height: 60px;
-
   margin-top: 18px;
-
   padding: 0 22px;
-
   box-sizing: border-box;
-
   display: flex;
-
   align-items: center;
-
   border-radius: 15px;
-
   background: #292929;
 }
 
@@ -1739,11 +1644,6 @@
   font-size: 14px;
 }
 
-
-/* =========================================
-   DEPOSIT COPY
-========================================= */
-
 .deposit-copy {
   padding-left: 10px;
   padding-top: 100px;
@@ -1786,11 +1686,6 @@
   font-weight: 100;
 }
 
-
-/* =========================================
-   DEPOSIT DOTS
-========================================= */
-
 .deposit-dots {
   display: flex;
   gap: 4px;
@@ -1811,12 +1706,6 @@
   background: #78efaa;
 }
 
-
-
-/* =========================================
-   SETTLEMENT SECTION
-========================================= */
-
 .settlement-section {
   width: 100%;
   height: 700px;
@@ -1828,11 +1717,6 @@
   border-top: 1px solid #363636;
   border-bottom: 1px solid #363636;
 }
-
-
-/* =========================================
-   LEFT SIDE
-========================================= */
 
 .settlement-copy {
   padding-top: 20px;
@@ -1856,11 +1740,6 @@
   letter-spacing: -0.01px;
 }
 
-
-/* =========================================
-   DOTS
-========================================= */
-
 .settlement-dots {
   display: flex;
   gap: 2px;
@@ -1878,11 +1757,6 @@
   background: #75eda6;
 }
 
-
-/* =========================================
-   CURRENCY PANEL
-========================================= */
-
 .currency-panel {
   width: 410px;
   box-sizing: border-box;
@@ -1893,11 +1767,6 @@
   margin-left: 120px;
   height: 530px;
 }
-
-
-/* =========================================
-   HEADER
-========================================= */
 
 .currency-header {
   display: flex;
@@ -1929,11 +1798,6 @@
   cursor: pointer;
 }
 
-
-/* =========================================
-   SEARCH
-========================================= */
-
 .currency-search {
   height: 50px;
   margin-top: 20px;
@@ -1955,10 +1819,6 @@
 }
 
 
-/* =========================================
-   SEPARATE CURRENCY GROUPS
-========================================= */
-
 .currency-group {
   padding: 10px 10px;
   margin-top: 12px;
@@ -1973,10 +1833,6 @@
 }
 
 
-/* =========================================
-   CURRENCY ITEM
-========================================= */
-
 .currency-item {
   height: 60px;
   padding: 0 10px;
@@ -1988,16 +1844,10 @@
   color: #eeeeee;
 }
 
-
-/* Ghana / GHS / USD items */
 .currency-group:not(.single) .currency-item + .currency-item {
   margin-top: 8px;
 }
 
-
-/* =========================================
-   CURRENCY INFORMATION
-========================================= */
 
 .currency-info {
   display: flex;
@@ -2005,10 +1855,6 @@
   gap: 10px;
 }
 
-
-/* =========================================
-   FLAGS
-========================================= */
 
 .flag {
   width: 40px;
@@ -2019,11 +1865,6 @@
   font-size: 25px;
   line-height: 1;
 }
-
-
-/* =========================================
-   TEXT
-========================================= */
 
 .currency-info strong {
   display: block;
@@ -2040,28 +1881,16 @@
 }
 
 
-/* =========================================
-   GHANA OPEN
-========================================= */
-
 .country-open {
   background: #373737;
 }
 
-
-/* =========================================
-   SELECTED GHS
-========================================= */
 
 .currency-item.selected {
   border: 1px solid #76eda7;
   background: #303030;
 }
 
-
-/* =========================================
-   CONTINUE BUTTON
-========================================= */
 
 .continue-button {
   border: none;
@@ -2072,11 +1901,6 @@
   font-size: 15px;
   cursor: pointer;
 }
-
-
-/* =========================================
-   ARROWS
-========================================= */
 
 .arrow {
   width: 30px;
@@ -2091,39 +1915,8 @@
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
 
-@media (max-width: 1000px) {
-  .settlement-section {
-    grid-template-columns: 1fr;
-
-    padding: 80px 40px;
-
-    gap: 60px;
-  }
-
-  .currency-panel {
-    width: 100%;
-    max-width: 540px;
-    margin: 0;
-  }
-
-  .settlement-copy h2 {
-    font-size: 48px;
-  }
-
-  .settlement-copy p {
-    font-size: 24px;
-  }
-}
-
-
-
-/* =========================================
-   FINAL CTA
-========================================= */
+/* FINAL CTA */
 
 .final-cta {
   height: 335px;
@@ -2155,9 +1948,7 @@
 }
 
 
-/* =========================================
-   BUTTONS
-========================================= */
+/* BUTTONS */
 
 .final-actions {
   display: flex;
@@ -2188,9 +1979,7 @@
 }
 
 
-/* =========================================
-   BRAND STRIP
-========================================= */
+/* BRAND STRIP */
 
 .brand-strip {
   height: 138px;
@@ -2201,9 +1990,6 @@
   border-bottom: 1px solid #303030;
   background: #101010;
 }
-
-
-/* LOGO */
 
 .brand-logo {
   display: flex;
@@ -2220,8 +2006,6 @@
 }
 
 
-/* DESCRIPTION */
-
 .brand-description {
   margin-left: 30px;
   padding-left: 30px;
@@ -2232,8 +2016,6 @@
   letter-spacing: -0.3px;
 }
 
-
-/* SOCIAL */
 
 .social-icons {
   margin-left: auto;
@@ -2249,9 +2031,7 @@
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
+   /* FOOTER */
 
 .footer {
   height: 110px;
@@ -2277,56 +2057,274 @@
   font-weight: 300;
 }
 
-
 /* =========================================
-   RESPONSIVE
+   COVERAGE PAGE
 ========================================= */
 
-@media (max-width: 1000px) {
+.coverage-page {
+  width: 100%;
+  background: #101010;
+  color: #f4f4f4;
+}
 
-  .final-cta {
-    padding: 80px 30px;
-  }
 
-  .final-cta h2 {
-    font-size: 42px;
-  }
+/* =========================================
+   COVERAGE HERO
+========================================= */
 
-  .final-cta p {
-    font-size: 23px;
-  }
+.coverage-hero {
+  position: relative;
+  height: 750px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #363636;
+  border-bottom: 1px solid #363636;
+}
 
-  .final-primary,
-  .final-secondary {
-    height: 75px;
-    padding: 0 35px;
-    font-size: 21px;
-  }
 
-  .brand-strip {
-    padding: 40px;
-    height: auto;
-    flex-wrap: wrap;
-    gap: 25px;
-  }
+.coverage-world {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
 
-  .brand-description {
-    margin-left: 0;
-  }
+.world-dots {
+  width: 90%;
+  height: 90%;
+  opacity: 0.35;
+  background-image: radial-gradient(
+    circle,
+    #393939 2px,
+    transparent 2px
+  );
 
-  .social-icons {
-    margin-left: 0;
-  }
+  background-size: 14px 14px;
 
-  .footer {
-    padding: 35px 40px;
-    flex-direction: column;
-    gap: 25px;
-    align-items: flex-start;
-  }
+  mask-image: radial-gradient(
+    ellipse at center,
+    black 0%,
+    transparent 72%
+  );
 
-  .footer-links {
-    flex-wrap: wrap;
-    font-size: 20px;
-  }
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    black 0%,
+    transparent 72%
+  );
+
+  transform: scaleX(1.4);
+}
+
+
+
+
+.coverage-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.coverage-hero-content h1 {
+  margin-left: 50px;
+  color: #f5f5f5;
+  font-size: 95px;
+  line-height: 1.02;
+  letter-spacing: -3px;
+  font-weight: 400;
+  
+}
+
+.coverage-hero-content p {
+  margin-left: 35px;
+  color: #777777;
+ font-size: 50px;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: -2px;
+}
+
+
+/* buttons */
+
+.coverage-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.coverage-primary,
+.coverage-secondary {
+  height: 80px;
+  padding: 0 35px;
+  border: none;
+  border-radius: 16px;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.coverage-primary {
+  background: #0d4f3a;
+  color: #78efaa;
+}
+
+.coverage-secondary {
+  background: #292929;
+  color: #f4f4f4;
+}
+
+
+/* =========================================
+   FEES SECTION
+========================================= */
+
+.coverage-fees {
+  height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 13%;
+  box-sizing: border-box;
+  background: #1d1d1d;
+  border-bottom: 1px solid #363636;
+}
+
+
+/* left */
+
+.fees-left {
+  display: flex;
+  align-items: center;
+}
+
+.fees-left h2 {
+  margin-top: 10px;
+  font-size: 51px;
+  line-height: 1.15;
+  font-weight: 100;
+  letter-spacing: -1px;
+}
+
+
+/* right */
+
+.fees-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+
+.fees-right p {
+  margin-top: 10px;
+  color: #777777;
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 300;
+  letter-spacing: 0.01px;
+}
+
+.fees-right button {
+  width: 240px;
+  height: 70px;
+  margin-top: 0px;
+  border: none;
+  border-radius: 15px;
+  background: #0d4f3a;
+  color: #78efaa;
+  font-size: 27px;
+  cursor: pointer;
+}
+
+
+/* =========================================
+   COUNTRIES SECTION
+========================================= */
+
+.coverage-countries {
+  height: 490px;
+  display: grid;
+  grid-template-columns: 38% 62%;
+  padding: 100px 9%;
+  box-sizing: border-box;
+  background: #101010;
+  border-bottom: 1px solid #363636;
+}
+
+
+/* intro */
+
+.countries-intro h2 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.countries-intro p {
+  margin-top: 15px;
+  color: #777777;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 300;
+}
+
+
+/* country grid */
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 50px;
+  align-content: center;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.country-flag {
+  width: 40px;
+  height: 30px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.country-name {
+  color: #eeeeee;
+  white-space: nowrap;
+}
+
+
+.flag {
+  width: 32px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+}
+
+.flag svg {
+  width: 100%;
+  height: 100%;
+
+  display: block;
 }

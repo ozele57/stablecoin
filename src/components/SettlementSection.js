@@ -1,5 +1,12 @@
 import React from "react";
 
+import {
+  GH,
+  US,
+  NG,
+  GB,
+} from "country-flag-icons/react/3x2";
+
 function SettlementSection() {
   return (
     <section className="settlement-section">
@@ -31,36 +38,50 @@ function SettlementSection() {
 
         {/* HEADER */}
         <div className="currency-header">
+
           <div>
             <h3>Choose currency</h3>
-            <p>Select local currency from the list</p>
+
+            <p>
+              Select local currency from the list
+            </p>
           </div>
 
           <button className="close-button">
             × Close
           </button>
+
         </div>
 
 
         {/* SEARCH */}
         <div className="currency-search">
-          <span className="search-icon">⌕</span>
-          <span>Search by name or keyword</span>
+
+          <span className="search-icon">
+            ⌕
+          </span>
+
+          <span>
+            Search by name or keyword
+          </span>
+
         </div>
 
 
         {/* =========================
             GHANA GROUP
         ========================== */}
+
         <div className="currency-group">
 
           {/* Ghana */}
+
           <div className="currency-item country-open">
 
             <div className="currency-info">
 
               <div className="flag">
-                🇬🇭
+                <GH title="Ghana" />
               </div>
 
               <div>
@@ -70,18 +91,21 @@ function SettlementSection() {
 
             </div>
 
-            <span className="arrow">⌃</span>
+            <span className="arrow">
+              ⌃
+            </span>
 
           </div>
 
 
           {/* GHS */}
+
           <div className="currency-item selected">
 
             <div className="currency-info">
 
               <div className="flag">
-                🇬🇭
+                <GH title="Ghana" />
               </div>
 
               <div>
@@ -99,12 +123,13 @@ function SettlementSection() {
 
 
           {/* USD */}
+
           <div className="currency-item">
 
             <div className="currency-info">
 
               <div className="flag">
-                🇺🇸
+                <US title="United States" />
               </div>
 
               <div>
@@ -114,7 +139,9 @@ function SettlementSection() {
 
             </div>
 
-            <span className="arrow">›</span>
+            <span className="arrow">
+              ›
+            </span>
 
           </div>
 
@@ -124,6 +151,7 @@ function SettlementSection() {
         {/* =========================
             NIGERIA - SEPARATE
         ========================== */}
+
         <div className="currency-group single">
 
           <div className="currency-item">
@@ -131,7 +159,7 @@ function SettlementSection() {
             <div className="currency-info">
 
               <div className="flag">
-                🇳🇬
+                <NG title="Nigeria" />
               </div>
 
               <div>
@@ -141,7 +169,9 @@ function SettlementSection() {
 
             </div>
 
-            <span className="arrow">⌄</span>
+            <span className="arrow">
+              ⌄
+            </span>
 
           </div>
 
@@ -151,6 +181,7 @@ function SettlementSection() {
         {/* =========================
             UNITED KINGDOM - SEPARATE
         ========================== */}
+
         <div className="currency-group single">
 
           <div className="currency-item">
@@ -158,7 +189,7 @@ function SettlementSection() {
             <div className="currency-info">
 
               <div className="flag">
-                🇬🇧
+                <GB title="United Kingdom" />
               </div>
 
               <div>
@@ -168,7 +199,9 @@ function SettlementSection() {
 
             </div>
 
-            <span className="arrow">⌄</span>
+            <span className="arrow">
+              ⌄
+            </span>
 
           </div>
 

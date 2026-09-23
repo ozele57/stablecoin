@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -9,15 +10,13 @@ import OneBalance from "./components/OneBalance";
 import DepositSection from "./components/DepositSection";
 import SettlementSection from "./components/SettlementSection";
 import FinalCTA from "./components/FinalCTA";
+import Coverage from "./components/Coverage";
 
 import "./App.css";
 
-function App() {
+function Home() {
   return (
-    <div className="page">
-
-      <Header />
-
+    <>
       <main>
         <Hero />
         <FeatureStrip />
@@ -29,7 +28,19 @@ function App() {
       </main>
 
       <FinalCTA />
+    </>
+  );
+}
 
+function App() {
+  return (
+    <div className="page">
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/coverage" element={<Coverage />} />
+      </Routes>
     </div>
   );
 }

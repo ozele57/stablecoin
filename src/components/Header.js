@@ -1,9 +1,31 @@
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+
 import Icon from "./Icon";
 import Logo from "./Logo";
 
 function Header() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const scrollToSection = (id) => {
+    // If we're not on the home page, go home first
+    if (location.pathname !== "/") {
+      navigate("/");
+      
+      setTimeout(() => {
+        const section = document.getElementById(id);
+
+        if (section) {
+          section.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
+      }, 100);
+      
+      return;
+    }
+
     const section = document.getElementById(id);
 
     if (section) {
@@ -14,10 +36,16 @@ function Header() {
   };
 
   const goHome = () => {
+    navigate("/");
+
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
+  };
+
+  const goCoverage = () => {
+    navigate("/coverage");
   };
 
   return (
@@ -36,8 +64,11 @@ function Header() {
       {/* NAVIGATION */}
       <nav className="nav-pill">
 
+        {/* COLLECTION */}
         <button
-          className="nav-item active"
+          className={`nav-item ${
+            location.pathname === "/" ? "active" : ""
+          }`}
           onClick={() => scrollToSection("collection")}
         >
           <Icon size={23}>
@@ -48,9 +79,12 @@ function Header() {
         </button>
 
 
+        {/* COVERAGE */}
         <button
-          className="nav-item"
-          onClick={() => scrollToSection("coverage")}
+          className={`nav-item ${
+            location.pathname === "/coverage" ? "active" : ""
+          }`}
+          onClick={goCoverage}
         >
           <Icon size={23}>
             <circle cx="10.5" cy="10.5" r="6.8" />
@@ -61,6 +95,7 @@ function Header() {
         </button>
 
 
+        {/* HOW IT WORKS */}
         <button
           className="nav-item"
           onClick={() => scrollToSection("how")}
@@ -73,6 +108,7 @@ function Header() {
         </button>
 
 
+        {/* DOCUMENTATION */}
         <button
           className="nav-item"
           onClick={() => scrollToSection("documentation")}
@@ -90,16 +126,16 @@ function Header() {
 
       {/* OPEN APP */}
       <button
-  className="open-app"
-  onClick={() => scrollToSection("app")}
->
-  <Icon size={32} stroke={2}>
-    <path d="m12 2 8 4.5v11L12 22l-8-4.5v-11L12 2Z" />
-    <path d="m4 6.5 8 4.5 8-4.5M12 11v11" />
-  </Icon>
+        className="open-app"
+        onClick={() => scrollToSection("app")}
+      >
+        <Icon size={32} stroke={2}>
+          <path d="m12 2 8 4.5v11L12 22l-8-4.5v-11L12 2Z" />
+          <path d="m4 6.5 8 4.5 8-4.5M12 11v11" />
+        </Icon>
 
-  <span>Open app</span>
-</button>
+        <span>Open app</span>
+      </button>
 
     </header>
   );
