@@ -2328,3 +2328,1100 @@
 
   display: block;
 }
+
+
+
+/* =========================================================
+   MOBILE RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  /* =======================================================
+     GENERAL
+  ======================================================= */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .app {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+
+  /* =======================================================
+     HEADER
+  ======================================================= */
+
+  .site-header {
+    width: 100%;
+    height: 82px;
+    min-height: 82px;
+
+    padding: 10px 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+  }
+
+  .logo-button {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+  }
+
+  .logo {
+    width: 52px;
+    height: 52px;
+    margin-left: 0;
+    border-radius: 12px;
+  }
+
+  .logo-mark {
+    font-size: 40px;
+  }
+
+  /* Hide desktop navigation */
+
+  .nav-pill {
+    display: none;
+  }
+
+  /* Open app */
+
+  .open-app {
+    width: 130px;
+    height: 48px;
+
+    padding: 8px 15px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+    gap: 6px;
+  }
+
+  .open-app svg {
+    width: 21px;
+    height: 26px;
+  }
+
+
+  /* =======================================================
+     HERO
+  ======================================================= */
+
+  .hero {
+    width: 100%;
+    min-height: calc(100vh - 82px);
+    height: auto;
+
+    padding: 60px 20px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 600px;
+
+    margin: 0;
+    transform: none;
+
+    text-align: center;
+  }
+
+  .hero h1 {
+    margin: 0;
+
+    padding-top: 0;
+
+    font-size: clamp(48px, 13vw, 72px);
+
+    line-height: 1.02;
+    letter-spacing: -3px;
+  }
+
+  .hero p {
+    margin-top: 22px;
+
+    padding-bottom: 0;
+
+    font-size: clamp(22px, 6vw, 31px);
+
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+
+  .hero-actions {
+    width: 100%;
+
+    margin: 40px 0 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .hero-button,
+  .hero-button.primary,
+  .hero-button.secondary {
+    width: 100%;
+    height: 65px;
+
+    min-width: 0;
+
+    font-size: 21px;
+    border-radius: 15px;
+  }
+
+
+  /* =======================================================
+     FEATURE STRIP
+  ======================================================= */
+
+  .feature-strip {
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 35px 20px;
+  }
+
+  .feature-strip::after {
+    display: none;
+  }
+
+  .feature {
+    width: 100%;
+    min-height: 210px;
+
+    padding: 20px 0;
+
+    justify-content: center;
+  }
+
+  .feature-right {
+    border-top: 1px solid #383838;
+  }
+
+  .feature-icon {
+    margin-top: 0;
+  }
+
+  .feature h3 {
+    margin-top: 15px;
+
+    font-size: 27px;
+
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+
+  .feature p {
+    margin-top: 10px;
+
+    max-width: 500px;
+
+    font-size: 21px;
+
+    line-height: 1.25;
+    letter-spacing: -0.7px;
+  }
+
+
+  /* =======================================================
+     GLOBAL LAYER
+  ======================================================= */
+
+  .global-layer {
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    padding: 60px 20px;
+  }
+
+  .global-left {
+    padding: 0;
+  }
+
+  .global-left h2 {
+    font-size: 42px;
+
+    line-height: 1.1;
+    letter-spacing: -2px;
+  }
+
+  .global-right {
+    padding: 35px 0 0;
+
+    align-items: flex-start;
+  }
+
+  .global-right p {
+    font-size: 23px;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.5px;
+
+    transform: none;
+  }
+
+  .global-demo-button {
+    width: 100%;
+    height: 65px;
+
+    margin-top: 25px;
+
+    font-size: 21px;
+  }
+
+
+  /* =======================================================
+     HOW IT WORKS
+  ======================================================= */
+
+  .how-title {
+    width: 100%;
+    height: 180px;
+  }
+
+  .how-title h2 {
+    font-size: 48px;
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+  }
+
+
+  /* =======================================================
+     ONE BALANCE
+  ======================================================= */
+
+  .one-balance {
+    width: 100%;
+    height: auto;
+
+    min-height: 700px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 55px 20px 60px;
+  }
+
+  .one-balance-copy {
+    width: 100%;
+
+    padding: 0;
+
+    text-align: left;
+  }
+
+  .one-balance-copy h2 {
+    font-size: 39px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+  }
+
+  .one-balance-copy p {
+    margin-top: 18px;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    letter-spacing: -0.5px;
+  }
+
+  .slider-dots {
+    position: static;
+
+    margin: 35px 0 0;
+
+    gap: 3px;
+  }
+
+  .slider-dots span {
+    width: 18px;
+    height: 4px;
+  }
+
+
+  /* BALANCE CARD */
+
+  .balance-card {
+    width: 100%;
+
+    margin-top: 45px;
+
+    transform: none;
+  }
+
+  .balance-box {
+    width: 100%;
+    height: 210px;
+
+    padding: 38px 20px 20px;
+
+    border-radius: 14px;
+  }
+
+  .balance-amount {
+    font-size: 35px;
+  }
+
+  .balance-actions {
+    width: 100%;
+
+    gap: 6px;
+
+    margin-top: 20px;
+  }
+
+  .balance-actions button {
+    height: 43px;
+
+    font-size: 12px;
+  }
+
+  .breakdown-heading {
+    margin-top: 15px;
+  }
+
+  .transaction-button {
+    transform: none;
+  }
+
+  .asset-row {
+    width: 100%;
+
+    height: 50px;
+  }
+
+
+  /* =======================================================
+     DEPOSIT SECTION
+  ======================================================= */
+
+  .deposit-section {
+    width: 100%;
+    height: auto;
+
+    min-height: 900px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px 20px 60px;
+  }
+
+  .deposit-visual {
+    width: 100%;
+
+    padding: 0;
+
+    order: 2;
+  }
+
+  .deposit-copy {
+    width: 100%;
+
+    padding: 0;
+
+    order: 1;
+  }
+
+  .deposit-copy h2 {
+    font-size: 39px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+  }
+
+  .deposit-copy p {
+    margin-top: 18px;
+
+    font-size: 22px;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.5px;
+  }
+
+  .documentation-button {
+    width: 100%;
+
+    height: 65px;
+
+    margin-top: 28px;
+
+    font-size: 21px;
+  }
+
+  .deposit-dots {
+    margin: 35px 0 0;
+  }
+
+
+  /* NETWORK */
+
+  .network-select {
+    width: 100%;
+
+    height: 60px;
+
+    margin-top: 45px;
+
+    padding: 0 16px;
+  }
+
+  .network-text strong {
+    font-size: 14px;
+  }
+
+  .network-arrow {
+    flex-shrink: 0;
+  }
+
+
+  /* QR */
+
+  .qr-container {
+    width: 100%;
+    height: 290px;
+
+    margin-top: 15px;
+
+    border-radius: 16px;
+  }
+
+  .qr-code {
+    width: 85%;
+    height: 250px;
+  }
+
+  .qr-center {
+    width: 62px;
+    height: 62px;
+
+    font-size: 42px;
+  }
+
+  .finder {
+    width: 65px;
+    height: 65px;
+
+    border-width: 9px;
+  }
+
+  .finder span {
+    width: 27px;
+    height: 27px;
+
+    top: 10px;
+    left: 10px;
+  }
+
+
+  /* WALLET */
+
+  .wallet-row {
+    width: 100%;
+
+    height: 58px;
+
+    margin-top: 15px;
+
+    padding: 0 16px;
+  }
+
+
+  /* =======================================================
+     SETTLEMENT SECTION
+  ======================================================= */
+
+  .settlement-section {
+    width: 100%;
+    height: auto;
+
+    min-height: 900px;
+
+    padding: 55px 20px 60px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+  }
+
+  .settlement-copy {
+    width: 100%;
+
+    padding: 0;
+  }
+
+  .settlement-copy h2 {
+    font-size: 39px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+  }
+
+  .settlement-copy p {
+    margin-top: 18px;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+  }
+
+  .settlement-dots {
+    margin-top: 35px;
+  }
+
+
+  /* CURRENCY PANEL */
+
+  .currency-panel {
+    width: 100%;
+
+    height: auto;
+
+    margin-left: 0;
+
+    padding: 20px;
+
+    border-radius: 12px;
+  }
+
+  .currency-header h3 {
+    font-size: 16px;
+  }
+
+  .currency-header p {
+    font-size: 11px;
+  }
+
+  .close-button {
+    padding: 8px 11px;
+
+    font-size: 10px;
+  }
+
+  .currency-search {
+    height: 46px;
+
+    margin-top: 18px;
+
+    font-size: 13px;
+  }
+
+  .search-icon {
+    font-size: 24px;
+  }
+
+  .currency-group {
+    padding: 8px;
+
+    margin-top: 10px;
+
+    border-radius: 12px;
+  }
+
+  .currency-item {
+    height: 55px;
+
+    padding: 0 8px;
+  }
+
+  .flag {
+    width: 32px;
+    height: 24px;
+
+    font-size: 20px;
+  }
+
+  .currency-info {
+    gap: 8px;
+  }
+
+  .currency-info strong {
+    font-size: 14px;
+  }
+
+  .currency-info small {
+    font-size: 11px;
+  }
+
+  .continue-button {
+    padding: 6px 9px;
+
+    font-size: 12px;
+  }
+
+  .arrow {
+    width: 28px;
+    height: 28px;
+
+    font-size: 18px;
+  }
+
+
+  /* =======================================================
+     FINAL CTA
+  ======================================================= */
+
+  .final-cta {
+    width: 100%;
+    height: auto;
+
+    min-height: 350px;
+
+    padding: 55px 20px;
+
+    text-align: center;
+  }
+
+  .final-cta h2 {
+    font-size: 37px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+  }
+
+  .final-cta p {
+    max-width: 500px;
+
+    margin-top: 16px;
+
+    font-size: 21px;
+
+    line-height: 1.25;
+  }
+
+  .final-actions {
+    width: 100%;
+
+    margin-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .final-primary,
+  .final-secondary {
+    width: 100%;
+
+    height: 62px;
+
+    font-size: 20px;
+  }
+
+
+  /* =======================================================
+     BRAND STRIP
+  ======================================================= */
+
+  .brand-strip {
+    width: 100%;
+    height: auto;
+
+    min-height: 170px;
+
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .brand-logo {
+    font-size: 32px;
+
+    letter-spacing: -2px;
+  }
+
+  .brand-logo span {
+    font-size: 45px;
+  }
+
+  .brand-description {
+    margin-left: 0;
+
+    padding-left: 0;
+
+    border-left: none;
+
+    font-size: 20px;
+
+    line-height: 1.2;
+  }
+
+  .social-icons {
+    margin-left: 0;
+
+    font-size: 32px;
+
+    gap: 15px;
+  }
+
+
+  /* =======================================================
+     FOOTER
+  ======================================================= */
+
+  .footer {
+    width: 100%;
+    height: auto;
+
+    padding: 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .copyright {
+    font-size: 17px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    font-size: 16px;
+  }
+
+
+  /* =======================================================
+     COVERAGE PAGE
+  ======================================================= */
+
+  .coverage-page {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* COVERAGE HERO */
+
+  .coverage-hero {
+    width: 100%;
+    height: auto;
+
+    min-height: 650px;
+
+    padding: 70px 20px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .coverage-world {
+    width: 100%;
+  }
+
+  .world-dots {
+    width: 120%;
+    height: 70%;
+
+    transform: scaleX(1.2);
+
+    opacity: 0.25;
+  }
+
+  .coverage-hero-content {
+    width: 100%;
+
+    margin: 0;
+  }
+
+  .coverage-hero-content h1 {
+    margin: 0;
+
+    font-size: clamp(45px, 12vw, 68px);
+
+    line-height: 1.04;
+
+    letter-spacing: -3px;
+  }
+
+  .coverage-hero-content p {
+    margin: 22px 0 0;
+
+    font-size: clamp(22px, 5.8vw, 30px);
+
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+  }
+
+  .coverage-actions {
+    width: 100%;
+
+    margin-top: 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .coverage-primary,
+  .coverage-secondary {
+    width: 100%;
+
+    height: 62px;
+
+    padding: 0;
+
+    font-size: 20px;
+  }
+
+
+  /* =======================================================
+     COVERAGE FEES
+  ======================================================= */
+
+  .coverage-fees {
+    width: 100%;
+    height: auto;
+
+    min-height: 420px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 55px 20px;
+
+    gap: 35px;
+  }
+
+  .fees-left {
+    width: 100%;
+  }
+
+  .fees-left h2 {
+    margin: 0;
+
+    font-size: 39px;
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+  }
+
+  .fees-right {
+    width: 100%;
+
+    padding: 0;
+  }
+
+  .fees-right p {
+    margin: 0;
+
+    font-size: 22px;
+
+    line-height: 1.25;
+  }
+
+  .fees-right button {
+    width: 100%;
+
+    height: 62px;
+
+    margin-top: 25px;
+
+    font-size: 20px;
+  }
+
+
+  /* =======================================================
+     COVERAGE COUNTRIES
+  ======================================================= */
+
+  .coverage-countries {
+    width: 100%;
+    height: auto;
+
+    min-height: 650px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 55px 20px;
+  }
+
+  .countries-intro {
+    width: 100%;
+  }
+
+  .countries-intro h2 {
+    font-size: 42px;
+
+    letter-spacing: -1.5px;
+  }
+
+  .countries-intro p {
+    margin-top: 15px;
+
+    font-size: 22px;
+
+    line-height: 1.25;
+  }
+
+  .countries-grid {
+    width: 100%;
+
+    margin-top: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 20px;
+    row-gap: 25px;
+
+    align-content: start;
+  }
+
+  .country {
+    min-width: 0;
+
+    gap: 9px;
+
+    font-size: 18px;
+  }
+
+  .country-flag {
+    width: 35px;
+    height: 25px;
+
+    border-radius: 4px;
+  }
+
+  .country-name {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  .site-header {
+    padding: 10px 12px;
+  }
+
+  .logo,
+  .logo-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .logo-mark {
+    font-size: 36px;
+  }
+
+  .open-app {
+    width: 118px;
+    height: 45px;
+
+    font-size: 14px;
+  }
+
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero p {
+    font-size: 21px;
+  }
+
+
+  .global-left h2,
+  .one-balance-copy h2,
+  .deposit-copy h2,
+  .settlement-copy h2,
+  .fees-left h2 {
+    font-size: 35px;
+  }
+
+
+  .how-title h2 {
+    font-size: 42px;
+  }
+
+
+  .coverage-hero-content h1 {
+    font-size: 43px;
+  }
+
+  .coverage-hero-content p {
+    font-size: 20px;
+  }
+
+
+  .countries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .country {
+    font-size: 19px;
+  }
+
+
+  .currency-panel {
+    padding: 15px;
+  }
+
+  .currency-header p {
+    max-width: 150px;
+  }
+
+}
