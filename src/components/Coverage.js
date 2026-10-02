@@ -82,9 +82,12 @@ function Coverage() {
       {/* COVERAGE HERO */}
       <section className="coverage-hero">
 
-        <div className="coverage-world">
-          <div className="world-dots"></div>
-        </div>
+       <div className="coverage-world">
+  <img
+    src="/Frame.svg"
+    alt=""
+  />
+</div>
 
         <div className="coverage-hero-content">
 
@@ -151,9 +154,11 @@ function Coverage() {
       {continents.map((continent) => (
 
         <section
-          className="coverage-countries"
-          key={continent}
-        >
+  className={`coverage-countries ${
+    continent === "Africa" ? "africa-section" : ""
+  }`}
+  key={continent}
+>
 
           <div className="countries-intro">
 

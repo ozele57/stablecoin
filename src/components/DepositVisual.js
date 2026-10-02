@@ -38,46 +38,11 @@ function DepositVisual() {
       {/* QR CODE */}
 
       <div className="qr-container">
-
-        <div className="qr-code">
-
-          <div className="finder top-left">
-            <span></span>
-          </div>
-
-          <div className="finder top-right">
-            <span></span>
-          </div>
-
-          <div className="finder bottom-left">
-            <span></span>
-          </div>
-
-
-          <div className="qr-dots">
-
-            {dots.map((_, index) => (
-
-              <i
-                key={index}
-                style={{
-                  left: `${(index * 37) % 88 + 6}%`,
-                  top: `${(index * 53) % 84 + 7}%`
-                }}
-              />
-
-            ))}
-
-          </div>
-
-
-          <div className="qr-center">
-            ✦
-          </div>
-
-        </div>
-
-      </div>
+  <img
+    src="/Frame 1707480164.png"
+    alt="QR code"
+  />
+</div>
 
 
       {/* WALLET ADDRESS */}

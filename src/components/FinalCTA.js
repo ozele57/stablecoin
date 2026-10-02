@@ -30,9 +30,11 @@ function FinalCTA() {
       <section className="brand-strip">
 
         <div className="brand-logo">
-          <span>✤</span>
-          Switch
-        </div>
+  <img
+    src="/Vector 3.svg"
+    alt="Switch"
+  />
+</div>
 
         <div className="brand-description">
           Stablecoin account for global businesses

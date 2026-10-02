@@ -18,19 +18,9 @@ function Hero() {
     >
 
       {/* BACKGROUND BLOCKS */}
-      <div
-        className="hero-grid"
-        aria-hidden="true"
-      >
-        <span className="grid-block block-1"></span>
-        <span className="grid-block block-2"></span>
-        <span className="grid-block block-3"></span>
-        <span className="grid-block block-4"></span>
-        <span className="grid-block block-5"></span>
-        <span className="grid-block block-6"></span>
-        <span className="grid-block block-7"></span>
-        <span className="grid-block block-8"></span>
-      </div>
+      <div className="hero-background">
+  <img src="/Group.svg" alt="" />
+</div>
 
 
       {/* HERO CONTENT */}

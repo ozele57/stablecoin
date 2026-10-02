@@ -16,7 +16,24 @@ import "./App.css";
 
 function Home() {
   return (
-    <>
+    <div className="page">
+
+      {/* LEFT SIDE LINE */}
+      <img
+        className="side-line side-line-left"
+        src="/Rectangle 12.svg"
+        alt=""
+      />
+
+      {/* RIGHT SIDE LINE */}
+      <img
+        className="side-line side-line-right"
+        src="/Rectangle 12.svg"
+        alt=""
+      />
+
+      <Header />
+
       <main>
         <Hero />
         <FeatureStrip />
@@ -28,20 +45,40 @@ function Home() {
       </main>
 
       <FinalCTA />
-    </>
+    </div>
+  );
+}
+
+function CoveragePage() {
+  return (
+    <div className="page">
+
+      {/* SIDE LINES */}
+      <img
+        className="side-line side-line-left"
+        src="/Rectangle 12.svg"
+        alt=""
+      />
+
+      <img
+        className="side-line side-line-right"
+        src="/Rectangle 12.svg"
+        alt=""
+      />
+
+      <Header />
+
+      <Coverage />
+    </div>
   );
 }
 
 function App() {
   return (
-    <div className="page">
-      <Header />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/coverage" element={<Coverage />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/coverage" element={<CoveragePage />} />
+    </Routes>
   );
 }
 

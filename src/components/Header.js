@@ -53,12 +53,12 @@ function Header() {
 
       {/* LOGO */}
       <button
-        className="logo-button"
-        onClick={goHome}
-        aria-label="Go to homepage"
-      >
-        <Logo />
-      </button>
+  className="logo-button"
+  onClick={goHome}
+  aria-label="Go to homepage"
+>
+  <img src="/Frame 18.png" alt="Logo" />
+</button>
 
 
       {/* NAVIGATION */}

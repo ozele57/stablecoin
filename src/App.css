@@ -33,26 +33,26 @@
 .logo-button {
   width: 60px;
   height: 60px;
-  padding: 0;
-  background: transparent;
-}
 
-.logo {
-  width: 60px;
-  height: 60px;
-  margin-left: 50px;
+  padding: 0;
+  border: none;
+
+  background: transparent;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0d4f3a;
-  border-radius: 14px;
+
+  cursor: pointer;
 }
 
-.logo-mark {
-  color: #7cf1ae;
-  font-size: 52px;
-  line-height: 1;
-  transform: translateY(-2px);
+.logo-button img {
+  width: 60px;
+  height: 60px;
+
+  display: block;
+
+  object-fit: contain;
 }
 
 
@@ -184,83 +184,22 @@
   pointer-events: none;
 }
 
-
-.hero-grid {
+.hero-background {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
   pointer-events: none;
 }
 
+.hero-background img {
+  width: 100%;
+  height: 100%;
 
-.grid-block {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.012);
-  border: 1px solid rgba(255, 255, 255, 0.008);
-}
-/* Individual blocks */
+  display: block;
 
-.block-1 {
-  left: 0;
-  top: 118px;
-
-  width: 132px;
-  height: 116px;
-}
-
-.block-2 {
-  left: 252px;
-  top: 118px;
-
-  width: 120px;
-  height: 119px;
-}
-
-.block-3 {
-  left: 493px;
-  top: 0;
-
-  width: 121px;
-  height: 117px;
-}
-
-.block-4 {
-  left: 730px;
-  top: 118px;
-
-  width: 120px;
-  height: 118px;
-}
-
-.block-5 {
-  left: 1092px;
-  top: 0;
-
-  width: 119px;
-  height: 117px;
-}
-
-.block-6 {
-  left: 1330px;
-  top: 0;
-
-  width: 119px;
-  height: 117px;
-}
-
-.block-7 {
-  right: 78px;
-  top: 118px;
-
-  width: 119px;
-  height: 118px;
-}
-
-.block-8 {
-  right: 0;
-  top: 358px;
-
-  width: 78px;
-  height: 120px;
+  object-fit: cover;
 }
 
 
@@ -996,17 +935,12 @@
 
 .one-balance {
   position: relative;
-
   width: 100%;
-  height: 450px;
-
+  height: 600px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   background: #101010;
-
   border-bottom: 1px solid #363636;
-
   overflow: hidden;
 }
 
@@ -1095,7 +1029,7 @@
   position: absolute;
   margin-bottom: 50px;
   left: 170px;
-  bottom: 75px;
+  bottom: 15px;
   display: flex;
   align-items: center;
   gap: 3px;
@@ -1126,7 +1060,6 @@
   width: 478px;
   padding-left: 0;
   margin-top: 38px;
-
   transform: translateX(80px);
 }
 
@@ -1135,255 +1068,19 @@
    BALANCE BOX
 ========================================= */
 
-.balance-box {
-  width: 85%;
-
-  height: 229px;
-
-  padding: 43px 25px 24px;
-
-  box-sizing: border-box;
-
-  border-radius: 14px;
-
-  background: #1d1d1d;
+.balance-card {
+  position: relative;
+  z-index: 2;
+  width: 478px;
+  margin-top: 38px;
+  transform: translateX(80px);
 }
 
+.balance-card img {
+  width: 100%;
+  height: auto;
 
-.current-balance {
   display: block;
-
-  text-align: center;
-
-  color: #777777;
-
-  font-size: 14px;
-}
-
-
-.balance-amount {
-  display: block;
-
-  margin-top: 13px;
-
-  text-align: center;
-
-  color: #f4f4f4;
-
-  font-size: 40px;
-
-  line-height: 1;
-
-  font-weight: 500;
-
-  letter-spacing: -1px;
-}
-
-
-.exchange-rate {
-  margin-top: 9px;
-
-  text-align: center;
-
-  color: #777777;
-
-  font-size: 16px;
-}
-
-
-.exchange-rate span {
-  color: #78efaa;
-
-  margin-right: 8px;
-}
-
-
-/* =========================================
-   BALANCE ACTIONS
-========================================= */
-
-.balance-actions {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 7px;
-
-  margin-top: 25px;
-}
-
-
-.balance-actions button {
-  height: 45px;
-
-  border: none;
-
-  border-radius: 9px;
-
-  background: #292929;
-
-  color: #eeeeee;
-
-  font-size: 14px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 7px;
-}
-
-
-.balance-actions button span {
-  font-size: 14px;
-}
-
-
-/* =========================================
-   BREAKDOWN
-========================================= */
-
-.breakdown-heading {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  margin-top: 14px;
-}
-
-
-.breakdown-heading h4 {
-  margin: 0;
-
-  color: #eeeeee;
-
-  font-size: 13px;
-
-  font-weight: 300;
-}
-
-
-.breakdown-heading p {
-  margin: 3px 0 0;
-
-  color: #666666;
-
-  font-size: 10px;
-}
-
-
-.transaction-button {
-  border: none;
-  border-radius: 8px;
-  padding: 8px 13px;
-  background: #075238;
-  color: #6eeca2;
-  font-size: 10px;
-  transform: translateX(-70px);
-}
-
-
-/* =========================================
-   ASSET ROW
-========================================= */
-
-.asset-row {
-  width: 85%;
-
-  height: 50px;
-
-  margin-top: 10px;
-
-  padding: 0 10px;
-
-  box-sizing: border-box;
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 9px;
-
-  border-radius: 10px;
-
-  background: #1d1d1d;
-}
-
-
-/* coin */
-
-.coin {
-  width: 30px;
-  height: 30px;
-
-  flex-shrink: 0;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  color: white;
-
-  font-size: 20px;
-
-  font-weight: 500;
-}
-
-
-.coin.blue {
-  background: #3979d9;
-}
-
-
-.coin.green {
-  background: #27aa82;
-}
-
-
-/* columns */
-
-.asset-col {
-  min-width: 66px;
-
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 1px;
-}
-
-
-.asset-col span {
-  color: #777777;
-
-  font-size: 10px;
-}
-
-
-.asset-col strong {
-  color: #eeeeee;
-
-  font-size: 12px;
-
-  font-weight: 400;
-}
-
-
-.refresh {
-  margin-left: auto;
-  border: none;
-  border-radius: 35px;
-  padding: 8px 16px;
-  background: #292929;
-  color: #eeeeee;
-  font-size: 12px;
 }
 
 .deposit-section {
@@ -1481,112 +1178,31 @@
   padding-bottom: 10px;
 }
 
+
 .qr-container {
   width: 400px;
   height: 320px;
+
   margin-top: 18px;
+
   border-radius: 20px;
+
   background: #292929;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-}
-
-
-.qr-code {
-  position: relative;
-
-  width: 350px;
-  height: 280px;
-
-  background: #292929;
 
   overflow: hidden;
 }
 
+.qr-container img {
+  width: 100%;
+  height: 100%;
 
-.qr-dots {
-  position: absolute;
+  display: block;
 
-  inset: 0;
-}
-
-
-.qr-dots i {
-  position: absolute;
-
-  width: 8px;
-  height: 8px;
-
-  border-radius: 50%;
-
-  background: #f4f4f4;
-}
-
-.finder {
-  position: absolute;
-
-  width: 82px;
-  height: 82px;
-
-  border: 12px solid #f4f4f4;
-
-  border-radius: 8px;
-
-  box-sizing: border-box;
-
-  z-index: 3;
-}
-
-
-.finder span {
-  position: absolute;
-
-  width: 34px;
-  height: 34px;
-
-  top: 12px;
-  left: 12px;
-
-  border-radius: 50%;
-
-  background: #f4f4f4;
-}
-
-
-.top-left {
-  top: 0;
-  left: 0;
-}
-
-
-.top-right {
-  top: 0;
-  right: 0;
-}
-
-
-.bottom-left {
-  bottom: 0;
-  left: 0;
-}
-
-.qr-center {
-  position: absolute;
-  z-index: 5;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 72px;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #78efaa;
-  color: #075238;
-  font-size: 52px;
+  object-fit: cover;
 }
 
 .wallet-row {
@@ -1757,164 +1373,29 @@
   background: #75eda6;
 }
 
-.currency-panel {
+
+
+.currency-panel-image {
   width: 410px;
-  box-sizing: border-box;
-  padding: 28px;
-  border: 1px solid #303030;
-  border-radius: 12px;
-  background: #1b1b1b;
-  margin-left: 120px;
   height: 530px;
-}
 
-.currency-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
+  margin-left: 120px;
 
-.currency-header h3 {
-  margin: 0;
-  color: #eeeeee;
-  font-size: 17px;
-  font-weight: 200;
-}
-
-.currency-header p {
-  margin: 4px 0 0;
-  color: #777777;
-  font-size: 13px;
-}
-
-
-.close-button {
-  border: none;
-  border-radius: 9px;
-  padding: 10px 16px;
-  background: #292929;
-  color: #eeeeee;
-  font-size: 11px;
-  cursor: pointer;
-}
-
-.currency-search {
-  height: 50px;
-  margin-top: 20px;
-  margin-bottom: 14px;
-  padding: 0 16px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-radius: 11px;
-  background: #292929;
-  color: #707070;
-  font-size: 16px;
-}
-
-.search-icon {
-  font-size: 29px;
-  line-height: 1;
-}
-
-
-.currency-group {
-  padding: 10px 10px;
-  margin-top: 12px;
-  border-radius: 13px;
-  background: #292929;
-}
-
-
-
-.currency-group.single {
-  padding: 0;
-}
-
-
-.currency-item {
-  height: 60px;
-  padding: 0 10px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 13px;
-  color: #eeeeee;
-}
-
-.currency-group:not(.single) .currency-item + .currency-item {
-  margin-top: 8px;
-}
-
-
-.currency-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-
-.flag {
-  width: 40px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
-  line-height: 1;
+
+  overflow: hidden;
 }
 
-.currency-info strong {
+.currency-panel-image img {
+  width: 100%;
+  height: 100%;
+
   display: block;
-  color: #eeeeee;
-  font-size: 15px;
-  font-weight: 100;
+
+  object-fit: contain;
 }
-
-.currency-info small {
-  display: block;
-  margin-top: 2px;
-  color: #777777;
-  font-size: 12px;
-}
-
-
-.country-open {
-  background: #373737;
-}
-
-
-.currency-item.selected {
-  border: 1px solid #76eda7;
-  background: #303030;
-}
-
-
-.continue-button {
-  border: none;
-  padding: 7px 10px;
-  border-radius: 25px;
-  background: #76eda7;
-  color: #101010;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.arrow {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #383838;
-  color: #eeeeee;
-  font-size: 20px;
-}
-
-
 
 /* FINAL CTA */
 
@@ -1994,15 +1475,12 @@
 .brand-logo {
   display: flex;
   align-items: center;
-  color: #78efaa;
-  font-size: 40px;
-  font-weight: 600;
-  letter-spacing: -3px;
 }
 
-.brand-logo span {
-  margin-right: 3px;
-  font-size: 58px;
+.brand-logo img {
+  width: 150px;
+  height: auto;
+  display: block;
 }
 
 
@@ -2093,33 +1571,30 @@
   pointer-events: none;
 }
 
-.world-dots {
-  width: 90%;
-  height: 90%;
-  opacity: 0.35;
-  background-image: radial-gradient(
-    circle,
-    #393939 2px,
-    transparent 2px
-  );
+.coverage-world {
+  position: absolute;
+  inset: 0;
 
-  background-size: 14px 14px;
+  width: 100%;
+  height: 100%;
 
-  mask-image: radial-gradient(
-    ellipse at center,
-    black 0%,
-    transparent 72%
-  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  -webkit-mask-image: radial-gradient(
-    ellipse at center,
-    black 0%,
-    transparent 72%
-  );
+  pointer-events: none;
 
-  transform: scaleX(1.4);
+  z-index: 0;
 }
 
+.coverage-world img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
 
 
 
@@ -2376,23 +1851,17 @@
     gap: 10px;
   }
 
+  @media (max-width: 800px) {
   .logo-button {
     width: 52px;
     height: 52px;
-    flex-shrink: 0;
   }
 
-  .logo {
+  .logo-button img {
     width: 52px;
     height: 52px;
-    margin-left: 0;
-    border-radius: 12px;
   }
-
-  .logo-mark {
-    font-size: 40px;
-  }
-
+}
   /* Hide desktop navigation */
 
   .nav-pill {
@@ -2672,56 +2141,20 @@
   }
 
 
-  /* BALANCE CARD */
+  @media (max-width: 800px) {
 
   .balance-card {
     width: 100%;
-
     margin-top: 45px;
-
     transform: none;
   }
 
-  .balance-box {
+  .balance-card img {
     width: 100%;
-    height: 210px;
-
-    padding: 38px 20px 20px;
-
-    border-radius: 14px;
+    height: auto;
   }
 
-  .balance-amount {
-    font-size: 35px;
-  }
-
-  .balance-actions {
-    width: 100%;
-
-    gap: 6px;
-
-    margin-top: 20px;
-  }
-
-  .balance-actions button {
-    height: 43px;
-
-    font-size: 12px;
-  }
-
-  .breakdown-heading {
-    margin-top: 15px;
-  }
-
-  .transaction-button {
-    transform: none;
-  }
-
-  .asset-row {
-    width: 100%;
-
-    height: 50px;
-  }
+}
 
 
   /* =======================================================
@@ -2812,41 +2245,27 @@
 
   /* QR */
 
+  @media (max-width: 800px) {
+
   .qr-container {
     width: 100%;
-    height: 290px;
+    height: auto;
+
+    aspect-ratio: 400 / 320;
 
     margin-top: 15px;
 
     border-radius: 16px;
   }
 
-  .qr-code {
-    width: 85%;
-    height: 250px;
+  .qr-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
   }
 
-  .qr-center {
-    width: 62px;
-    height: 62px;
-
-    font-size: 42px;
-  }
-
-  .finder {
-    width: 65px;
-    height: 65px;
-
-    border-width: 9px;
-  }
-
-  .finder span {
-    width: 27px;
-    height: 27px;
-
-    top: 10px;
-    left: 10px;
-  }
+}
 
 
   /* WALLET */
@@ -3424,4 +2843,58 @@
     max-width: 150px;
   }
 
+}
+.app {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #101010;
+
+  position: relative;
+}
+
+/* =========================================
+   SIDE SVG LINES
+========================================= */
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+/* BOTH SIDES */
+
+.side-line {
+  position: fixed;
+
+  top: 0;
+  bottom: 0;
+
+  width: 30px;
+  height: 100vh;
+
+  z-index: 50;
+
+  pointer-events: none;
+}
+
+
+/* LEFT */
+
+.side-line-left {
+  left: 0;
+}
+
+
+/* RIGHT */
+
+.side-line-right {
+  right: 0;
+
+  transform: scaleX(-1);
+}
+
+.africa-section {
+  background: #1d1d1d;
 }
