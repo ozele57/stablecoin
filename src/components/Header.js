@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 import Icon from "./Icon";
-import Logo from "./Logo";
 
 function Header() {
   const navigate = useNavigate();

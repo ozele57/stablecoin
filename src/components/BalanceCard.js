@@ -1,5 +1,4 @@
 import React from "react";
-import AssetRow from "./AssetRow";
 
 function BalanceCard() {
   return (

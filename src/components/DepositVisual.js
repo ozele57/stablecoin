@@ -2,8 +2,6 @@ import React from "react";
 
 function DepositVisual() {
 
-  const dots = Array.from({ length: 150 });
-
   return (
     <div className="deposit-visual">
 
