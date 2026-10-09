@@ -17,13 +17,13 @@ function Hero() {
       id="collection"
     >
 
-      {/* BACKGROUND BLOCKS */}
+      
       <div className="hero-background">
   <img src="/Group.svg" alt="" />
 </div>
 
 
-      {/* HERO CONTENT */}
+      
       <div className="hero-content">
 
         <h1>
@@ -40,7 +40,7 @@ function Hero() {
         </p>
 
 
-        {/* BUTTONS */}
+      
         <div className="hero-actions">
 
           <button

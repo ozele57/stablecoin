@@ -4,7 +4,7 @@ function SettlementSection() {
   return (
     <section className="settlement-section">
 
-      {/* LEFT SIDE */}
+
       <div className="settlement-copy">
         <h2>
           Cross border and local
@@ -26,7 +26,7 @@ function SettlementSection() {
       </div>
 
 
-      {/* CURRENCY PANEL IMAGE */}
+      
       <div className="currency-panel-image">
         <img
           src="/Frame 1707480166.svg"

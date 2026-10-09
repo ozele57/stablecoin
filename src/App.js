@@ -18,14 +18,12 @@ function Home() {
   return (
     <div className="page">
 
-      {/* LEFT SIDE LINE */}
       <img
         className="side-line side-line-left"
         src="/Rectangle 12.svg"
         alt=""
       />
 
-      {/* RIGHT SIDE LINE */}
       <img
         className="side-line side-line-right"
         src="/Rectangle 12.svg"
@@ -53,7 +51,6 @@ function CoveragePage() {
   return (
     <div className="page">
 
-      {/* SIDE LINES */}
       <img
         className="side-line side-line-left"
         src="/Rectangle 12.svg"

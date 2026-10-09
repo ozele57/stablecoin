@@ -5,8 +5,6 @@ function DepositVisual() {
   return (
     <div className="deposit-visual">
 
-      {/* NETWORK SELECT */}
-
       <div className="network-select">
 
         <div className="network-icons">
@@ -32,18 +30,12 @@ function DepositVisual() {
 
       </div>
 
-
-      {/* QR CODE */}
-
       <div className="qr-container">
   <img
     src="/Frame 1707480164.png"
     alt="QR code"
   />
 </div>
-
-
-      {/* WALLET ADDRESS */}
 
       <div className="wallet-row">
 

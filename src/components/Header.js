@@ -8,7 +8,7 @@ function Header() {
   const location = useLocation();
 
   const scrollToSection = (id) => {
-    // If we're not on the home page, go home first
+  
     if (location.pathname !== "/") {
       navigate("/");
       
@@ -50,7 +50,7 @@ function Header() {
   return (
     <header className="site-header">
 
-      {/* LOGO */}
+      
       <button
   className="logo-button"
   onClick={goHome}
@@ -60,10 +60,10 @@ function Header() {
 </button>
 
 
-      {/* NAVIGATION */}
+    
       <nav className="nav-pill">
 
-        {/* COLLECTION */}
+        
         <button
           className={`nav-item ${
             location.pathname === "/" ? "active" : ""
@@ -78,7 +78,7 @@ function Header() {
         </button>
 
 
-        {/* COVERAGE */}
+    
         <button
           className={`nav-item ${
             location.pathname === "/coverage" ? "active" : ""
@@ -94,7 +94,7 @@ function Header() {
         </button>
 
 
-        {/* HOW IT WORKS */}
+        
         <button
           className="nav-item"
           onClick={() => scrollToSection("how")}
@@ -107,7 +107,7 @@ function Header() {
         </button>
 
 
-        {/* DOCUMENTATION */}
+      
         <button
           className="nav-item"
           onClick={() => scrollToSection("documentation")}
@@ -123,7 +123,7 @@ function Header() {
       </nav>
 
 
-      {/* OPEN APP */}
+
       <button
         className="open-app"
         onClick={() => scrollToSection("app")}

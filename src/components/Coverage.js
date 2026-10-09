@@ -79,7 +79,6 @@ function Coverage() {
   return (
     <main className="coverage-page">
 
-      {/* COVERAGE HERO */}
       <section className="coverage-hero">
 
        <div className="coverage-world">
@@ -119,8 +118,6 @@ function Coverage() {
 
       </section>
 
-
-      {/* FEES SECTION */}
       <section className="coverage-fees">
 
         <div className="fees-left">
@@ -148,9 +145,7 @@ function Coverage() {
         </div>
 
       </section>
-
-
-      {/* CONTINENT SECTIONS */}
+      
       {continents.map((continent) => (
 
         <section
@@ -201,8 +196,6 @@ function Coverage() {
 
       ))}
 
-
-      {/* SAME FINAL CTA AS THE MAIN PAGE */}
       <FinalCTA />
 
     </main>
