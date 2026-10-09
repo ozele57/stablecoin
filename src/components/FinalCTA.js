@@ -42,7 +42,10 @@ function FinalCTA() {
 
         <div className="social-icons">
           <span>in</span>
-          <span>●</span>
+          <span><img
+    src="/cat.png"
+    alt="Switch"
+  /></span>
           <span>𝕏</span>
         </div>
 
